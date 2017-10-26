@@ -18,6 +18,7 @@
 @end
 @implementation JZNewVersionView{
     NSInteger _jz_num;
+    CGFloat _currentOffsetX;
 }
 
 
@@ -52,14 +53,17 @@
     //设置单元格的尺寸
     flowLayout.itemSize = CGSizeMake(JZScreenWidth, JZScreenHeight);
     //设置头视图高度
-    flowLayout.headerReferenceSize = CGSizeMake(0, 30);
+//    flowLayout.headerReferenceSize = CGSizeMake(0, 30);
     //flowlaout的属性，横向滑动
     flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     UICollectionView * jz_collectionView = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:flowLayout];
     jz_collectionView.bounces = YES;
     [jz_collectionView registerClass:[JZNewVersionCell class] forCellWithReuseIdentifier:@"JZNewVersionCell"];
     jz_collectionView.backgroundColor = [UIColor whiteColor];
+    jz_collectionView.contentSize = CGSizeMake(JZScreenWidth, 0);
+    jz_collectionView.contentOffset = CGPointMake(_currentOffsetX, 0);
     jz_collectionView.pagingEnabled = YES;
+    jz_collectionView.alwaysBounceVertical = NO;
     //jz_collectionView.contentSize = CGSizeMake(self.jz_datas.count*JZScreenWidth, JZScreenHeight);
     jz_collectionView.showsHorizontalScrollIndicator = NO;
     jz_collectionView.showsVerticalScrollIndicator = NO;
@@ -118,13 +122,37 @@
     CGFloat doublePage=scrollView.contentOffset.x / self.jz_collectionView.bounds.size.width;
     int intPage=(doublePage+0.5);
     
+    //CGFloat _currentOffsetX = intPage*scrollView.frame.size.width;
+    
     //设置页码
     self.jz_pageControl.currentPage=intPage;
     if (self.jz_pageControl.currentPage == self.jz_datas.count-1) {
+        _currentOffsetX = intPage*scrollView.frame.size.width;
         self.jz_enterBtn.hidden = NO;
+        if (_currentOffsetX < scrollView.contentOffset.x) { // 到最后一个 禁止继续右滑
+            scrollView.contentOffset = CGPointMake(intPage*scrollView.frame.size.width, -64);
+            return;
+        }else{
+            _currentOffsetX = scrollView.contentOffset.x;
+            scrollView.contentOffset = CGPointMake(_currentOffsetX, -64);
+            return;
+        }
     }else{
         self.jz_enterBtn.hidden = YES;
     }
+    if (self.jz_pageControl.currentPage == 0) { // 保证在第一个的时候  禁止左滑
+        _currentOffsetX = 0;
+        if (intPage*scrollView.frame.size.width >= scrollView.contentOffset.x) {
+            scrollView.contentOffset = CGPointMake(intPage*scrollView.frame.size.width, -64);
+            return;
+        }else{
+            _currentOffsetX = scrollView.contentOffset.x;
+            scrollView.contentOffset = CGPointMake(_currentOffsetX, -64);
+            return;
+        }
+    }
+    
+    
 }
 
 #pragma mark -- UICollectionViewDataSource
