@@ -13,6 +13,13 @@
 		D617F34D1FA02B780098AE88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D617F34C1FA02B780098AE88 /* Assets.xcassets */; };
 		D617F3501FA02B780098AE88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D617F34E1FA02B780098AE88 /* LaunchScreen.storyboard */; };
 		D617F3531FA02B780098AE88 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D617F3521FA02B780098AE88 /* main.m */; };
+		D617F35C1FA02C420098AE88 /* JZNewVersionView.m in Sources */ = {isa = PBXBuildFile; fileRef = D617F35B1FA02C420098AE88 /* JZNewVersionView.m */; };
+		D617F35F1FA030050098AE88 /* JZNewVersionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D617F35E1FA030050098AE88 /* JZNewVersionCell.m */; };
+		D617F3631FA034DC0098AE88 /* u=87941439,1125787948&fm=11&gp=0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D617F3621FA034DC0098AE88 /* u=87941439,1125787948&fm=11&gp=0.jpg */; };
+		D617F3651FA08F080098AE88 /* u=4266564208,2452097814&fm=11&gp=0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D617F3641FA08F080098AE88 /* u=4266564208,2452097814&fm=11&gp=0.jpg */; };
+		D617F3671FA08F0F0098AE88 /* u=2514746018,3381081595&fm=27&gp=0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D617F3661FA08F0F0098AE88 /* u=2514746018,3381081595&fm=27&gp=0.jpg */; };
+		D617F3691FA08F190098AE88 /* u=2398155085,3520102918&fm=27&gp=0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D617F3681FA08F190098AE88 /* u=2398155085,3520102918&fm=27&gp=0.jpg */; };
+		D617F36B1FA08F230098AE88 /* u=2771784367,1529189070&fm=27&gp=0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D617F36A1FA08F230098AE88 /* u=2771784367,1529189070&fm=27&gp=0.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,15 @@
 		D617F34F1FA02B780098AE88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D617F3511FA02B780098AE88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D617F3521FA02B780098AE88 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D617F35A1FA02C420098AE88 /* JZNewVersionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZNewVersionView.h; sourceTree = "<group>"; };
+		D617F35B1FA02C420098AE88 /* JZNewVersionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZNewVersionView.m; sourceTree = "<group>"; };
+		D617F35D1FA030050098AE88 /* JZNewVersionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZNewVersionCell.h; sourceTree = "<group>"; };
+		D617F35E1FA030050098AE88 /* JZNewVersionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZNewVersionCell.m; sourceTree = "<group>"; };
+		D617F3621FA034DC0098AE88 /* u=87941439,1125787948&fm=11&gp=0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "u=87941439,1125787948&fm=11&gp=0.jpg"; sourceTree = "<group>"; };
+		D617F3641FA08F080098AE88 /* u=4266564208,2452097814&fm=11&gp=0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "u=4266564208,2452097814&fm=11&gp=0.jpg"; sourceTree = "<group>"; };
+		D617F3661FA08F0F0098AE88 /* u=2514746018,3381081595&fm=27&gp=0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "u=2514746018,3381081595&fm=27&gp=0.jpg"; sourceTree = "<group>"; };
+		D617F3681FA08F190098AE88 /* u=2398155085,3520102918&fm=27&gp=0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "u=2398155085,3520102918&fm=27&gp=0.jpg"; sourceTree = "<group>"; };
+		D617F36A1FA08F230098AE88 /* u=2771784367,1529189070&fm=27&gp=0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "u=2771784367,1529189070&fm=27&gp=0.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +74,12 @@
 		D617F3421FA02B780098AE88 /* JZNewVersionDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D617F36A1FA08F230098AE88 /* u=2771784367,1529189070&fm=27&gp=0.jpg */,
+				D617F3681FA08F190098AE88 /* u=2398155085,3520102918&fm=27&gp=0.jpg */,
+				D617F3661FA08F0F0098AE88 /* u=2514746018,3381081595&fm=27&gp=0.jpg */,
+				D617F3641FA08F080098AE88 /* u=4266564208,2452097814&fm=11&gp=0.jpg */,
+				D617F3621FA034DC0098AE88 /* u=87941439,1125787948&fm=11&gp=0.jpg */,
+				D617F3591FA02C240098AE88 /* JZNewVersion */,
 				D617F3431FA02B780098AE88 /* AppDelegate.h */,
 				D617F3441FA02B780098AE88 /* AppDelegate.m */,
 				D617F3461FA02B780098AE88 /* ViewController.h */,
@@ -69,6 +91,17 @@
 				D617F3521FA02B780098AE88 /* main.m */,
 			);
 			path = JZNewVersionDemo;
+			sourceTree = "<group>";
+		};
+		D617F3591FA02C240098AE88 /* JZNewVersion */ = {
+			isa = PBXGroup;
+			children = (
+				D617F35A1FA02C420098AE88 /* JZNewVersionView.h */,
+				D617F35B1FA02C420098AE88 /* JZNewVersionView.m */,
+				D617F35D1FA030050098AE88 /* JZNewVersionCell.h */,
+				D617F35E1FA030050098AE88 /* JZNewVersionCell.m */,
+			);
+			path = JZNewVersion;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,8 +163,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D617F3501FA02B780098AE88 /* LaunchScreen.storyboard in Resources */,
+				D617F3651FA08F080098AE88 /* u=4266564208,2452097814&fm=11&gp=0.jpg in Resources */,
+				D617F36B1FA08F230098AE88 /* u=2771784367,1529189070&fm=27&gp=0.jpg in Resources */,
 				D617F34D1FA02B780098AE88 /* Assets.xcassets in Resources */,
 				D617F34B1FA02B780098AE88 /* Main.storyboard in Resources */,
+				D617F3631FA034DC0098AE88 /* u=87941439,1125787948&fm=11&gp=0.jpg in Resources */,
+				D617F3671FA08F0F0098AE88 /* u=2514746018,3381081595&fm=27&gp=0.jpg in Resources */,
+				D617F3691FA08F190098AE88 /* u=2398155085,3520102918&fm=27&gp=0.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +180,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D617F35C1FA02C420098AE88 /* JZNewVersionView.m in Sources */,
 				D617F3481FA02B780098AE88 /* ViewController.m in Sources */,
+				D617F35F1FA030050098AE88 /* JZNewVersionCell.m in Sources */,
 				D617F3531FA02B780098AE88 /* main.m in Sources */,
 				D617F3451FA02B780098AE88 /* AppDelegate.m in Sources */,
 			);
@@ -281,7 +321,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SVHP59BWC7;
 				INFOPLIST_FILE = JZNewVersionDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wanhong.JZNewVersionDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -296,7 +336,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SVHP59BWC7;
 				INFOPLIST_FILE = JZNewVersionDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wanhong.JZNewVersionDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
